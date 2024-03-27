@@ -23,7 +23,7 @@ method_counts = {method: collection.count_documents(
 
 print("Methods:")
 for method in methods:
-    print(f"\t{method}: {method_counts[method]}")
+    print(f"\tmethod {method}: {method_counts[method]}")
 
 """Count number of logs with method=GET and path=/status"""
 status_logs_count = collection.count_documents(
